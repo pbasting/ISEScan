@@ -7,14 +7,14 @@ import os.path
 # 
 # FragGeneScan
 #FragGeneScan = '/u/zhiqxie/informatics/inst/FragGeneScan1.19/run_FragGeneScan.pl'
-FragGeneScan = '/u/zhiqxie/informatics/inst/FragGeneScan1.30/run_FragGeneScan.pl'
+FragGeneScan = 'run_FragGeneScan.pl'
 # Hmmer
-phmmer = '/u/zhiqxie/informatics/inst/hmmer-3.1b2/bin/phmmer'
-hmmsearch = '/u/zhiqxie/informatics/inst/hmmer-3.1b2/bin/hmmsearch'
+phmmer = 'phmmer'
+hmmsearch = 'hmmsearch'
 # Blast 
-blastn = '/l/ncbi-blast/bin/blastn'
-blastp = '/l/ncbi-blast/bin/blastp'
-makeblastdb = '/l/ncbi-blast/bin/makeblastdb'
+blastn = 'blastn'
+blastp = 'blastp'
+makeblastdb = 'makeblastdb'
 
 # get path where isescan.py is
 import sys
@@ -371,3 +371,8 @@ nproc = 2
 nthread = 4
 #nthread = 16
 #nthread = 32
+
+
+from config import *
+
+

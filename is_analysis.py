@@ -1480,7 +1480,7 @@ def translate_genome_dna_v1(dna, output_path, seq_type, train_model):
 	input = "-genome=" + dna
 	output = "-out=" + output_file
 	seq_type = "-complete=" + seq_type
-	train_model = "-train=" + train_model
+	train_model = "-train=" + constants.train_model
 	#nthread = '-thread=8'
 	nthread = '-thread=2'
 	cmd_line = '{0} {1} {2} {3} {4} {5}'.format(gene_translate_cmd, input, output, seq_type, train_model, nthread)
@@ -1500,7 +1500,7 @@ def translate_genome_dna_v2(dna, output_file, seq_type, train_model):
 	input = "-genome=" + dna
 	output = "-out=" + output_file
 	seq_type = "-complete=" + seq_type
-	train_model = "-train=" + train_model
+	train_model = "-train=" + constants.train_model
 	#nthread = '-thread=8'
 	nthread = '-thread=1'
 	cmd_line = '{0} {1} {2} {3} {4} {5}'.format(gene_translate_cmd, input, output, seq_type, train_model, nthread)
@@ -1527,7 +1527,7 @@ def translate_genome_dna_v3(args):
 	input = "-genome=" + dna
 	output = "-out=" + output_file
 	seq_type = "-complete=" + seq_type
-	train_model = "-train=" + train_model
+	train_model = "-train=" + constants.train_model
 	nthread = '-thread='+str(constants.nthread)
 	cmd_line = '{0} {1} {2} {3} {4} {5}'.format(gene_translate_cmd, input, output, seq_type, train_model, nthread)
 	#cmd_line = '{0} {1} {2} {3} {4}'.format(gene_translate_cmd, input, output, seq_type, train_model)
